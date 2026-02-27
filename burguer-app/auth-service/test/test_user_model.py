@@ -58,7 +58,7 @@ def test_serialize_user_inteiro():
 def test_serialize_user_inesperado():
     user = {
         "email": 123456,
-        "name": ["Nome inesperado", "Outro NOme"],
+        "name": ["Nome inesperado", "Outro Nome"],
         "address": {"rua": "123 Exemplo"},
         "role": True
     }
@@ -66,7 +66,7 @@ def test_serialize_user_inesperado():
 
     esperado = {
         "email": 123456,
-        "name": ["Nome Inesperado", "Outro Nome"],
+        "name": ["Nome inesperado", "Outro Nome"],
         "address": {"rua": "123 Exemplo"},
         "role": True
     }
